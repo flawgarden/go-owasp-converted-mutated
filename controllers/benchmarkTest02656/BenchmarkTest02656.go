@@ -1,0 +1,82 @@
+package controllers
+
+import (
+	"database/sql"
+	"fmt"
+	"net/http"
+	"net/url"
+
+	_ "github.com/go-sql-driver/mysql"
+)
+
+const source = "root:password@tcp(127.0.0.1:3306)/goseccode"
+
+type User struct {
+	Id       int    `json:"id"`
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+func main() {
+	http.HandleFunc("/sqli-06/BenchmarkTest02656", BenchmarkTest02656)
+	http.ListenAndServe(":8080", nil)
+}
+
+func BenchmarkTest02656(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	queryString := r.URL.RawQuery
+	paramval := "BenchmarkTest02656="
+	paramLoc := -1
+
+	if queryString != "" {
+		paramLoc = len(queryString) - len(paramval)
+	}
+
+	if paramLoc == -1 {
+		http.Error(w, "getQueryString() couldn't find expected parameter 'BenchmarkTest02656' in query string.", http.StatusBadRequest)
+		return
+	}
+
+	param := queryString[paramLoc+len(paramval):]
+	ampersandLoc := indexOfAmpersand(queryString, paramLoc)
+	if ampersandLoc != -1 {
+		param = queryString[paramLoc+len(paramval) : ampersandLoc]
+	}
+
+	param, _ = url.QueryUnescape(param)
+
+	bar := doSomething(param)
+	sqlStr := fmt.Sprintf("INSERT INTO users (username, password) VALUES ('foo','%s')", bar)
+
+	db, err := sql.Open("mysql", source)
+	if err != nil {
+		http.Error(w, "Error processing request.", http.StatusInternalServerError)
+		return
+	}
+	defer db.Close()
+
+	_, err = db.Exec(sqlStr)
+	if err != nil {
+		http.Error(w, "Error processing request.", http.StatusInternalServerError)
+		return
+	}
+
+	w.Write([]byte("Update complete"))
+}
+
+func indexOfAmpersand(queryString string, start int) int {
+	for i := start; i < len(queryString); i++ {
+		if queryString[i] == '&' {
+			return i
+		}
+	}
+	return -1
+}
+
+func doSomething(param string) string {
+	num := 106
+	if (7*42)-num > 200 {
+		return "This should never happen"
+	}
+	return param
+}
