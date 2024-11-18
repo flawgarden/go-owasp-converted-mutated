@@ -1,0 +1,56 @@
+//Semgrep original results: [79]
+//Gosec original results: []
+//CodeQL original results: [79]
+//Snyk original results: [79]
+//-------------
+//Semgrep analysis results: [79, 319]
+//CodeQL analysis results: [563]
+//Snyk analysis results: []
+//Gosec analysis results: []
+//Original file name: controllers/benchmarkTest00711/BenchmarkTest00711.go
+//Original file CWE's: [79]  
+//Original file kind: fail
+//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/nested.tmt with name nested_field_simple_array_negative 
+//Used extensions: 
+//Program:
+package controllers
+
+import (
+	"fmt"
+	"net/http"
+)
+
+type BenchmarkTest00711 struct{}
+
+func (b *BenchmarkTest00711) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html;charset=UTF-8")
+
+	values := r.URL.Query()["BenchmarkTest00711"]
+	var param string
+	if len(values) > 0 {
+		param = values[0]
+	} else {
+		param = ""
+	}
+
+	bar := ""
+	if param != "" {
+		valuesList := []string{"safe", param, "moresafe"}
+		valuesList = valuesList[1:] // remove the 1st safe value
+		bar = valuesList[0]         // get the param value
+	}
+
+arr4124 := []string{"FyFqv"}
+nested7231 := NewNestedFields1FromArray(arr4124)
+bar = nested7231.nested1.values[0]
+
+	w.Header().Set("X-XSS-Protection", "0")
+	obj := []interface{}{"a", bar}
+	output := fmt.Sprintf("<!DOCTYPE html>\n<html>\n<body>\n<p>Formatted like: %s and %s.</p>\n</body>\n</html>", obj[0], obj[1])
+	w.Write([]byte(output))
+}
+
+func main() {
+	http.Handle("/xss-01/BenchmarkTest00711", &BenchmarkTest00711{})
+	http.ListenAndServe(":8080", nil)
+}
