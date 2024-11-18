@@ -1,0 +1,75 @@
+package controllers
+
+import (
+	"database/sql"
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"strings"
+
+	"go-sec-code/models"
+
+	_ "github.com/go-sql-driver/mysql"
+)
+
+const source = "root:password@tcp(127.0.0.1:3306)/goseccode"
+
+type BenchmarkTest02277Controller struct {
+	http.Handler
+}
+
+func (c *BenchmarkTest02277Controller) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	if r.Method == http.MethodGet {
+		c.doPost(w, r)
+	} else {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+	}
+}
+
+func (c *BenchmarkTest02277Controller) doPost(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	param := r.FormValue("BenchmarkTest02277")
+
+	bar := doSomething(param)
+
+	sqlStr := fmt.Sprintf("SELECT * from USERS where USERNAME='foo' and PASSWORD='%s'", bar)
+	db, err := sql.Open("mysql", source)
+	if err != nil {
+		http.Error(w, "Database connection error", http.StatusInternalServerError)
+		return
+	}
+	defer db.Close()
+
+	rows, err := db.Query(sqlStr)
+	if err != nil {
+		http.Error(w, "Query execution error", http.StatusInternalServerError)
+		return
+	}
+	defer rows.Close()
+
+	users := []models.User{}
+	for rows.Next() {
+		var user models.User
+		if err := rows.Scan(&user.Id, &user.Username, &user.Password); err != nil {
+			http.Error(w, "Error scanning rows", http.StatusInternalServerError)
+			return
+		}
+		users = append(users, user)
+	}
+
+	output, err := json.Marshal(users)
+	if err != nil {
+		http.Error(w, "Error marshaling JSON", http.StatusInternalServerError)
+		return
+	}
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(output)
+}
+
+func doSomething(param string) string {
+	if param == "" {
+		return ""
+	}
+	// Dummy base64 decoding logic for demonstration
+	return strings.TrimSpace(param)
+}
