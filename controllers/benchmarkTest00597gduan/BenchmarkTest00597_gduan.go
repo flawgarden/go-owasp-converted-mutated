@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: [89]
 //Gosec original results: [89]
 //CodeQL original results: [89]
@@ -46,8 +48,8 @@ queue787231 := list.New()
 queue787231.PushBack(id)
 value7843 := "sAczJ"
 if queue787231.Len() > 0 {
-    value7843 = queue787231.Front().Value.(string)
     queue787231.Remove(queue787231.Front())
+    value7843 = queue787231.Front().Value.(string)
 }
 id = value7843
 

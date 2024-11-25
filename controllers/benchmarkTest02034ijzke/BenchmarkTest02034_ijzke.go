@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: []
 //Gosec original results: [22]
 //CodeQL original results: [22]
@@ -38,6 +40,7 @@ func (b *BenchmarkTest02034) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 queue787231 := list.New()
 queue787231.PushBack("WDXHz")
 queue787231.PushBack("xQKiS")
+queue787231.PushBack(bar)
 value7847 := "hJHkI"
 for queue787231.Len() > 0 {
     element := queue787231.Front()

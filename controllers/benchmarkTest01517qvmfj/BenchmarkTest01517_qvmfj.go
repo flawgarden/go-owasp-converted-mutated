@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 // PASS
 // Semgrep original results: []
 // Gosec original results: [78]
@@ -43,7 +45,7 @@ func (c *BenchmarkTest01517Controller) Post() {
 	} else {
 		a12341 = &DerivedBinaryOpClass2{}
 	}
-	param = a12341.VirtualCall("", "")
+	param = a12341.VirtualCall(param, param)
 
 	if param == "" {
 		param = ""

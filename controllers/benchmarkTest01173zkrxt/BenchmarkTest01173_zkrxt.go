@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: [79]
 //Gosec original results: []
 //CodeQL original results: [79]
@@ -33,6 +35,7 @@ func (bt *BenchmarkTest01173) ServeHTTP(w http.ResponseWriter, r *http.Request) 
 queue787231 := list.New()
 queue787231.PushBack("SriRh")
 queue787231.PushBack("")
+queue787231.PushBack(param)
 value7847 := "NvOSv"
 for queue787231.Len() > 0 {
     element := queue787231.Front()

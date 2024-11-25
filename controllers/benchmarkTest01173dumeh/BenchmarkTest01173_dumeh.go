@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: [79]
 //Gosec original results: []
 //CodeQL original results: [79]
@@ -40,7 +42,7 @@ if _, ok := map787234[param]; ok {
      delete(map787234, param)
 }
 _, exists := map787234[param]
-if !exists {
+if exists {
     bar = "dtltP"
 }
 

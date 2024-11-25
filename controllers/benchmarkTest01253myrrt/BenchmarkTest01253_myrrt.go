@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: [79]
 //Gosec original results: []
 //CodeQL original results: [79]
@@ -36,8 +38,8 @@ queue787231 := list.New()
 queue787231.PushBack(param)
 value7843 := "loEPm"
 if queue787231.Len() > 0 {
-    value7843 = queue787231.Front().Value.(string)
     queue787231.Remove(queue787231.Front())
+    value7843 = queue787231.Front().Value.(string)
 }
 param = value7843
 

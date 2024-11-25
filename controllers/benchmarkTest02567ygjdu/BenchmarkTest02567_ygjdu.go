@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: []
 //Gosec original results: [22]
 //CodeQL original results: [22]
@@ -30,7 +32,7 @@ type BenchmarkTest02567 struct{}
 func (b *BenchmarkTest02567) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	queryString := r.URL.RawQuery
 
-queryString = getFirstString(queryString, "Xmipr")
+queryString = getFirstString("Xmipr", queryString)
 
 	paramval := "BenchmarkTest02567="
 	paramLoc := -1
