@@ -954,7 +954,7 @@
                     ]
                 },
                 {
-                    "kind": "pass",
+                    "kind": "fail",
                     "message": {
                         "text": "message"
                     },
@@ -2858,7 +2858,7 @@
                     ]
                 },
                 {
-                    "kind": "pass",
+                    "kind": "fail",
                     "message": {
                         "text": "message"
                     },
@@ -2970,7 +2970,7 @@
                     ]
                 },
                 {
-                    "kind": "pass",
+                    "kind": "fail",
                     "message": {
                         "text": "message"
                     },
@@ -6122,7 +6122,7 @@
                     ]
                 },
                 {
-                    "kind": "pass",
+                    "kind": "fail",
                     "message": {
                         "text": "message"
                     },

@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: []
 //Gosec original results: []
 //CodeQL original results: [22]
@@ -40,8 +42,8 @@ queue787231 := list.New()
 queue787231.PushBack(bar)
 value7843 := "ElVRh"
 if queue787231.Len() > 0 {
-    value7843 = queue787231.Front().Value.(string)
     queue787231.Remove(queue787231.Front())
+    value7843 = queue787231.Front().Value.(string)
 }
 bar = value7843
 

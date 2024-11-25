@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: []
 //Gosec original results: [22]
 //CodeQL original results: [22]
@@ -40,7 +42,7 @@ if -699337114 > 0 {
 } else {
     a12341 = &DerivedBinaryOpClass2{}
 }
-param = a12341.VirtualCall("", "")
+param = a12341.VirtualCall(param, param)
 
 		bar = param
 	} else {

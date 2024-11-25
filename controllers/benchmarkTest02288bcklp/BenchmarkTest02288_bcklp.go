@@ -1,3 +1,5 @@
+//Original file region: null, null, null, null
+//Mutated file region: null, null, null, null
 //Semgrep original results: [89]
 //Gosec original results: [89]
 //CodeQL original results: [89]
@@ -48,7 +50,7 @@ if -1976621270 % -340681480 == 0 {
 } else {
     a12341 = &DerivedBinaryOpClass2{}
 }
-id = a12341.VirtualCall("", "")
+id = a12341.VirtualCall(id, id)
 
 	bar := doSomething(id)
 	sqlStr := fmt.Sprintf("INSERT INTO users (username, password) VALUES ('foo', '%s')", bar)
