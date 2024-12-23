@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [79]
-//Gosec original results: []
-//CodeQL original results: [79]
-//Snyk original results: []
-//-------------
-//Semgrep analysis results: [79]
-//CodeQL analysis results: []
-//Gosec analysis results: []
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest02234/BenchmarkTest02234.go
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/conditional/conditionswitch.tmt with name switch_fallthrough_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

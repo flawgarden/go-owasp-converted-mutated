@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [89, 79]
-//Gosec analysis results: [89]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest01723/BenchmarkTest01723.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/queue.tmt with name queue_poll_all_positive 
-//Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ := list.New() | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.PushBack(~[EXPR_~[TYPE@1]~]~) | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.PushBack(~[EXPR_~[TYPE@1]~]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | EXPR_string -> strings.ToLower(~[EXPR_string]~) | MACRO_QueueName -> queue787231
-//Program:
 package controllers
 
 import (

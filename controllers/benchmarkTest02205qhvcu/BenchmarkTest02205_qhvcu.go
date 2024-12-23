@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: []
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//CodeQL analysis results: [22, 36, 73, 99, 23, 116, 79, 117]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02205/BenchmarkTest02205.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/queue.tmt with name queue_is_empty_1_negative 
-//Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ := list.New() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.PushBack(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
-//Program:
 package controllers
 
 import (

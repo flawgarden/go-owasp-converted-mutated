@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: []
-//-------------
-//Semgrep analysis results: [89]
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest02181/BenchmarkTest02181.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/varargs/varargs.tmt with name varargs_combine_strings_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

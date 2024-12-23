@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [79]
-//Gosec original results: []
-//CodeQL original results: [79]
-//Snyk original results: [79]
-//-------------
-//Semgrep analysis results: [79]
-//CodeQL analysis results: []
-//Snyk analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02133/BenchmarkTest02133.go
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/conditional/switch.tmt with name switch_operator_any_negative 
-//Used extensions: MACRO_Any_string -> ~[VAR_string]~
-//Program:
 package controllers
 
 import (

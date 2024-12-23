@@ -1,0 +1,58 @@
+{
+    "original_file_metadata": {
+        "file_name": "controllers/benchmarkTest00678/BenchmarkTest00678.go",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/concurrency/concurrency",
+                "template_name": "two_set_threads_in_sequence_positive"
+            }
+        ],
+        "used_extensions": [],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89,
+                79
+            ]
+        },
+        {
+            "tool_name": "Gosec",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89,
+                703
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89
+            ]
+        },
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": []
+        }
+    ]
+}

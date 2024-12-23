@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: []
-//-------------
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [563]
-//Semgrep analysis results: []
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest01382/BenchmarkTest01382.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/conditional/dowhile.tmt with name do_while_operator_negative 
-//Used extensions: EXPR_bool -> strings.EqualFold(~[EXPR_string]~, ~[EXPR_string]~) | EXPR_string -> strings.Replace(~[EXPR_string]~, "/", ".", -1) | EXPR_string -> strings.Join([]string{~[EXPR_string]~, ~[EXPR_string]~}, "")
-//Program:
 package controllers
 
 import (

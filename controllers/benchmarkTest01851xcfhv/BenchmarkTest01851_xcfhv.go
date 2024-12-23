@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [78]
-//CodeQL original results: [78]
-//Snyk original results: [78]
-//-------------
-//Gosec analysis results: [78, 703]
-//CodeQL analysis results: [78]
-//Snyk analysis results: [1004]
-//Semgrep analysis results: []
-//Original file name: controllers/benchmarkTest01851/BenchmarkTest01851.go
-//Original file CWE's: [78]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/types/embedding.tmt with name embedding_simple_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

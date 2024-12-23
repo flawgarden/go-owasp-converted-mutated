@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: [89]
-//-------------
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [89, 116, 79]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//Original file name: controllers/benchmarkTest02635/BenchmarkTest02635.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/constructors.tmt with name class_with_nested_string_initialization_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

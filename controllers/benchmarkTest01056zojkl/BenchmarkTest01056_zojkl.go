@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [79]
-//Gosec original results: []
-//CodeQL original results: [79]
-//Snyk original results: [79]
-//-------------
-//Semgrep analysis results: [79]
-//CodeQL analysis results: [116, 79]
-//Snyk analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest01056/BenchmarkTest01056.go
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/constructors.tmt with name class_with_array_initialization_positive 
-//Used extensions: MACRO_Empty_string_Array -> []string{"", "", ""}
-//Program:
 package controllers
 
 import (

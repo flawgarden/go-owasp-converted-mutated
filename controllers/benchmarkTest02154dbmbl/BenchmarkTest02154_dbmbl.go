@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [78]
-//CodeQL original results: [78]
-//Snyk original results: []
-//-------------
-//Gosec analysis results: [78, 703]
-//CodeQL analysis results: []
-//Semgrep analysis results: []
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest02154/BenchmarkTest02154.go
-//Original file CWE's: [78]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/types/alias.tmt with name type_alias_for_function_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

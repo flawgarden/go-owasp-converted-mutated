@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [79]
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [89, 116, 79]
-//Snyk analysis results: [89]
-//Original file name: controllers/benchmarkTest02454/BenchmarkTest02454.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

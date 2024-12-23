@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [22]
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//Gosec analysis results: [22, 276]
-//CodeQL analysis results: [22, 36, 73, 99, 23, 117]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//Original file name: controllers/benchmarkTest01906/BenchmarkTest01906.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

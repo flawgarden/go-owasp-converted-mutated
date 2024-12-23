@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-// Semgrep original results: []
-// Gosec original results: []
-// CodeQL original results: [22]
-// Snyk original results: [22]
-// -------------
-// CodeQL analysis results: [22, 36, 73, 99, 23, 116, 79]
-// Snyk analysis results: []
-// Semgrep analysis results: []
-// Gosec analysis results: []
-// Original file name: controllers/benchmarkTest00455/BenchmarkTest00455.go
-// Original file CWE's: [22]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/go/sensitivity/defer.tmt with name simple_defer_neutral
-// Used extensions:
-// Program:
 package controllers
 
 import (

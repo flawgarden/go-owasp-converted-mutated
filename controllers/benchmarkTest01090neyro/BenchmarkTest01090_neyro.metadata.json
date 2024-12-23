@@ -1,0 +1,55 @@
+{
+    "original_file_metadata": {
+        "file_name": "controllers/benchmarkTest01090/BenchmarkTest01090.go",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/field/nested",
+                "template_name": "nested_field_depth_4_negative"
+            }
+        ],
+        "used_extensions": [],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89
+            ]
+        },
+        {
+            "tool_name": "Gosec",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89,
+                703
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                563
+            ]
+        },
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": []
+        }
+    ]
+}

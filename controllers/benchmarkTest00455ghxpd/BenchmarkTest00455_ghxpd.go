@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: []
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//CodeQL analysis results: [116, 79]
-//Snyk analysis results: [79, 23]
-//Semgrep analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest00455/BenchmarkTest00455.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/nested.tmt with name nested_field_depth_4_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

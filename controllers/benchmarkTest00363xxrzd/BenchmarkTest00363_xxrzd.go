@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [22]
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//Gosec analysis results: [676, 22, 276, 703]
-//CodeQL analysis results: [116, 79]
-//Snyk analysis results: [79, 23]
-//Semgrep analysis results: []
-//Original file name: controllers/benchmarkTest00363/BenchmarkTest00363.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (
