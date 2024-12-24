@@ -1,0 +1,63 @@
+{
+    "original_file_metadata": {
+        "file_name": "controllers/benchmarkTest00681/BenchmarkTest00681.go",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/list",
+                "template_name": "list_clear_start_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_List -> ~[MACRO_ListName]~ := make([] ~[TYPE@1]~, 0)",
+            "MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~ = append(~[MACRO_ListName]~, ~[VAR_~[TYPE@1]~@1]~)",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231"
+        ],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89
+            ]
+        },
+        {
+            "tool_name": "Gosec",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89,
+                703
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                563
+            ]
+        },
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": []
+        }
+    ]
+}

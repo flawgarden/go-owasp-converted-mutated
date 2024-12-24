@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [22]
-//CodeQL original results: [22]
-//Snyk original results: []
-//-------------
-//Gosec analysis results: [22, 703]
-//CodeQL analysis results: []
-//Semgrep analysis results: []
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest02569/BenchmarkTest02569.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/map.tmt with name map_remove_1_negative 
-//Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ := make(map[~[TYPE@1]~]~[TYPE@2]~) | MACRO_Add_EXPR_ToMap -> ~[MACRO_MapName]~[~[EXPR_~[TYPE@1]~@1]~] = ~[EXPR_~[TYPE@2]~@2]~ | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
-//Program:
 package controllers
 
 import (

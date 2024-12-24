@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [22]
-//CodeQL original results: []
-//Snyk original results: [22]
-//-------------
-//Gosec analysis results: [22, 276, 703]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//CodeQL analysis results: []
-//Original file name: controllers/benchmarkTest01408/BenchmarkTest01408.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/field/constructors.tmt with name string_factory_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

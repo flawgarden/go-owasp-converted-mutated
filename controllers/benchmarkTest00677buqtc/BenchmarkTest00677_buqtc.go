@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [89, 79, 319]
-//Gosec analysis results: [676, 89, 703]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest00677/BenchmarkTest00677.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/namedreturns.tmt with name named_return_zero_values_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

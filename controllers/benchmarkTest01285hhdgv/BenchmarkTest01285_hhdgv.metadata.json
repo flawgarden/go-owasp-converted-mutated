@@ -1,0 +1,59 @@
+{
+    "original_file_metadata": {
+        "file_name": "controllers/benchmarkTest01285/BenchmarkTest01285.go",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/field/constructors",
+                "template_name": "class_with_array_initialization_neutral"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Empty_string_Array -> []string{\"\", \"\", \"\", \"\"}",
+            "MACRO_Zero_Or_One -> 1"
+        ],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": []
+        },
+        {
+            "tool_name": "Gosec",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                676,
+                78,
+                703
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                78,
+                116,
+                79
+            ]
+        },
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": []
+        }
+    ]
+}

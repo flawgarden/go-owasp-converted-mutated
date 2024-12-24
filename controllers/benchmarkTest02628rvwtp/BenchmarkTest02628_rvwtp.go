@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: []
-//CodeQL original results: [89]
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [79, 89]
-//CodeQL analysis results: []
-//Snyk analysis results: [89]
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02628/BenchmarkTest02628.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/closure.tmt with name simple_closure_counter_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

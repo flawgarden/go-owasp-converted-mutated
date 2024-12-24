@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: []
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//CodeQL analysis results: [22, 36, 73, 99, 23, 116, 79, 117]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02205/BenchmarkTest02205.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/types/assertions.tmt with name type_assertion_in_switch_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

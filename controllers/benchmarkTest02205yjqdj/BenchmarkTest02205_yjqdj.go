@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: []
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//-------------
-//CodeQL analysis results: []
-//Snyk analysis results: [79, 23]
-//Semgrep analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02205/BenchmarkTest02205.go
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

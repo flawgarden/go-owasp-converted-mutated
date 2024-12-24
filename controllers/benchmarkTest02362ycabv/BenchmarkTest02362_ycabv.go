@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: []
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [89, 79]
-//Gosec analysis results: [89]
-//Snyk analysis results: []
-//CodeQL analysis results: []
-//Original file name: controllers/benchmarkTest02362/BenchmarkTest02362.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/concurrency/concurrency.tmt with name two_switching_tasks_concurrent_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

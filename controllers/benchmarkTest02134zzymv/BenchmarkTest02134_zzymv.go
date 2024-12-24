@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [79]
-//Gosec original results: []
-//CodeQL original results: [79]
-//Snyk original results: [79]
-//-------------
-//Semgrep analysis results: [79, 319]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Gosec analysis results: []
-//Original file name: controllers/benchmarkTest02134/BenchmarkTest02134.go
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/list.tmt with name list_clear_start_negative 
-//Used extensions: MACRO_Create_List -> ~[MACRO_ListName]~ := make([] ~[TYPE@1]~, 0) | MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~ = append(~[MACRO_ListName]~, ~[VAR_~[TYPE@1]~@1]~) | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
-//Program:
 package controllers
 
 import (

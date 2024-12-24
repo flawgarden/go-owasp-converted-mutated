@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: []
-//-------------
-//Semgrep analysis results: []
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest02099/BenchmarkTest02099.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/assignment.tmt with name simple_assignment_negative 
-//Used extensions: 
-//Program:
 package controllers
 
 import (

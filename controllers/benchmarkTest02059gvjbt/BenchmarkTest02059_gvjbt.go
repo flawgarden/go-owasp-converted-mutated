@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: []
-//Gosec original results: [78]
-//CodeQL original results: [78]
-//Snyk original results: [78]
-//-------------
-//Gosec analysis results: [676, 78, 703]
-//CodeQL analysis results: [78, 116, 79]
-//Snyk analysis results: []
-//Semgrep analysis results: []
-//Original file name: controllers/benchmarkTest02059/BenchmarkTest02059.go
-//Original file CWE's: [78]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/queue.tmt with name queue_remove_if_positive 
-//Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ := list.New() | MACRO_Add_Fixed_CONST_ToQueue -> ~[MACRO_QueueName]~.PushBack(~[CONST_~[TYPE@1]~@1]~) | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.PushBack(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
-//Program:
 package controllers
 
 import (

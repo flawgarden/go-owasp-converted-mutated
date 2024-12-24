@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: [89]
-//Snyk original results: []
-//-------------
-//Semgrep analysis results: [89]
-//Gosec analysis results: [89, 703]
-//CodeQL analysis results: [563]
-//Snyk analysis results: []
-//Original file name: controllers/benchmarkTest01090/BenchmarkTest01090.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/collections/set.tmt with name set_add_simple_negative 
-//Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ := make(map[~[TYPE@1]~]struct{}) | MACRO_Add_Fixed_CONST_ToSet -> ~[MACRO_SetName]~[~[CONST_~[TYPE@1]~@1]~] = struct{}{} | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
-//Program:
 package controllers
 
 import (

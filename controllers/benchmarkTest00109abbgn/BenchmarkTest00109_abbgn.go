@@ -1,20 +1,3 @@
-//Original file region: null, null, null, null
-//Mutated file region: null, null, null, null
-//Semgrep original results: [89]
-//Gosec original results: [89]
-//CodeQL original results: []
-//Snyk original results: [89]
-//-------------
-//Semgrep analysis results: [1004, 89, 79]
-//Gosec analysis results: [89, 703]
-//Snyk analysis results: [1004]
-//CodeQL analysis results: []
-//Original file name: controllers/benchmarkTest00109/BenchmarkTest00109.go
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/go/sensitivity/concurrency/concurrency.tmt with name null_and_restore_condvar_positive 
-//Used extensions: 
-//Program:
 package controllers
 
 import (
