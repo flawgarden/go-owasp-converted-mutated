@@ -17,7 +17,8 @@
         "used_extensions": [
             " MACRO_Any_string -> ~[VAR_string]~"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

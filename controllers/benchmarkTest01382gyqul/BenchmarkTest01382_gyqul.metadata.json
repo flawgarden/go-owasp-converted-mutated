@@ -19,7 +19,8 @@
             "EXPR_string -> strings.Replace(~[EXPR_string]~, \"/\", \".\", -1)",
             "EXPR_string -> strings.Join([]string{~[EXPR_string]~, ~[EXPR_string]~}, \"\")"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

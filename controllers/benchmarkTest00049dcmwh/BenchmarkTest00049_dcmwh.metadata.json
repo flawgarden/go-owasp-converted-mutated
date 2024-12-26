@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_bool -> strings.EqualFold(~[EXPR_str]~, ~[EXPR_str]~)"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

@@ -17,7 +17,8 @@
         "used_extensions": [
             " MACRO_Empty_string_Array -> []string{\"\", \"\"}"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {
