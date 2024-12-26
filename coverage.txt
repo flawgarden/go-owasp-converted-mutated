@@ -1,0 +1,393 @@
+Total coverage: 42.91%
+sensitivity/defer: 50.00%
+	simple_defer_neutral covered
+	simple_non_defer_negative covered
+	defer_in_func_negative uncovered
+	defer_in_func_positive uncovered
+sensitivity/closure: 100.00%
+	simple_closure_counter_positive covered
+	simple_closure_counter_negative covered
+	closure_capturing_positive covered
+	closure_capturing_negative covered
+	closure_returning_closure_positive covered
+	closure_returning_closure_negative covered
+	closure_with_outer_variable_positive covered
+	closure_with_outer_variable_negative covered
+sensitivity/time: 100.00%
+	simple_time_neutral covered
+sensitivity/regex: 0.00%
+	regex_exactly_match_negative uncovered
+	regex_escaping_positive uncovered
+	regex_char_group_negative uncovered
+	regex_not_char_group_positive uncovered
+	regex_anchor_negative uncovered
+	regex_anchor_positive uncovered
+	regex_counting_quantifier_negative uncovered
+	regex_count_positive uncovered
+	regex_alternation_negative uncovered
+	regex_options_negative uncovered
+	regex_inline_options_negative uncovered
+	regex_replace_positive uncovered
+	regex_replace_with_substitution_negative uncovered
+	regex_split_positive uncovered
+	regex_matches_positive uncovered
+sensitivity/string_interpolation: 0.00%
+	format_method_interpolation_positive uncovered
+	format_method_interpolation_negative uncovered
+	string_interpolation_with_string_operations_positive uncovered
+sensitivity/async: 0.00%
+	simple_async_negative uncovered
+	simple_async_positive uncovered
+sensitivity/namedreturns: 42.86%
+	named_return_simple_positive uncovered
+	named_return_simple_negative covered
+	named_return_swap_simple_positive uncovered
+	named_return_swap_simple_negative covered
+	named_return_with_defer_positive uncovered
+	named_return_with_defer_negative uncovered
+	named_return_zero_values_negative covered
+sensitivity/assignment: 42.86%
+	simple_assignment_positive uncovered
+	simple_assignment_negative covered
+	assignment_positive uncovered
+	assignment_negative covered
+	lazy_eval_positive uncovered
+	lazy_eval_negative covered
+	new_var_assignment_neutral uncovered
+sensitivity/pattern-matching/instance_matching: 0.00%
+	pattern_matching_simple_1_positive uncovered
+	pattern_matching_simple_1_negative uncovered
+	pattern_matching_simple_2_negative uncovered
+	pattern_matching_simple_4_positive uncovered
+	pattern_matching_simple_4_negative uncovered
+	pattern_matching_switch_simple_1_positive uncovered
+	pattern_matching_switch_simple_1_negative uncovered
+sensitivity/generics/constrainedClasses: 0.00%
+	get_value_from_generic_class_positive uncovered
+	get_value_from_generic_class_negative uncovered
+	get_object_value_from_generic_class_positive uncovered
+	get_object_value_from_generic_class_negative uncovered
+	template_extends_variance_positive uncovered
+	template_extends_variance_negative uncovered
+	interface_constrained_generic_class_positive uncovered
+	interface_constrained_generic_class_negative uncovered
+	inheritance_constrained_generic_class_positive uncovered
+	inheritance_constrained_generic_class_negative uncovered
+sensitivity/lambdas/mutation: 25.00%
+	unary_lambda_mutation_positive covered
+	unary_lambda_mutation_negative uncovered
+	nested_unary_lambda_mutation_positive uncovered
+	nested_unary_lambda_mutation_negative uncovered
+sensitivity/field/nested: 87.50%
+	nested_field_simple_positive uncovered
+	nested_field_simple_negative covered
+	nested_field_simple_array_positive uncovered
+	nested_field_simple_array_negative covered
+	nested_field_depth_2_positive covered
+	nested_field_depth_2_negative covered
+	nested_field_depth_2_array_positive covered
+	nested_field_depth_2_array_negative covered
+	nested_field_depth_3_positive covered
+	nested_field_depth_3_negative covered
+	nested_field_depth_3_array_positive covered
+	nested_field_depth_3_array_negative covered
+	nested_field_depth_4_positive covered
+	nested_field_depth_4_negative covered
+	nested_field_depth_4_array_positive covered
+	nested_field_depth_4_array_negative covered
+sensitivity/field/staticField: 100.00%
+	class_with_static_string_field_positive covered
+	class_with_static_string_field_negative covered
+sensitivity/field/constructorChains: 33.33%
+	constructor_chains_positive uncovered
+	constructor_chains_negative covered
+	constructor_chains_neutral uncovered
+sensitivity/field/regularField: 50.00%
+	class_with_string_field_positive uncovered
+	class_with_string_field_negative covered
+sensitivity/field/constructors: 64.29%
+	class_with_instance_initializer_positive covered
+	class_with_instance_initializer_negative covered
+	class_with_string_initialization_positive uncovered
+	class_with_string_initialization_negative covered
+	class_with_nested_string_initialization_positive covered
+	class_with_nested_string_initialization_negative covered
+	class_with_array_initialization_by_value_positive uncovered
+	class_with_array_initialization_by_value_negative uncovered
+	class_with_array_initialization_by_value_neutral uncovered
+	class_with_array_initialization_positive covered
+	class_with_array_initialization_negative covered
+	class_with_array_initialization_neutral covered
+	string_factory_positive uncovered
+	string_factory_negative covered
+sensitivity/exceptions/panic: 0.00%
+	simple_panic_positive uncovered
+	simple_panic_negative uncovered
+	arithmetic_panic_positive uncovered
+	arithmetic_panic_negative uncovered
+	dereferencing_panic_positive uncovered
+	dereferencing_panic_negative uncovered
+sensitivity/collections/set: 27.27%
+	set_add_simple_positive uncovered
+	set_add_simple_negative covered
+	set_remove_simple_positive uncovered
+	set_remove_simple_negative uncovered
+	set_contains_positive uncovered
+	set_contains_negative covered
+	set_size_positive uncovered
+	set_size_negative uncovered
+	set_union_negative uncovered
+	set_remove_positive covered
+	set_disjoint_positive uncovered
+sensitivity/collections/queue: 45.45%
+	simple_poll_positive uncovered
+	simple_poll_negative uncovered
+	simple_peek_negative uncovered
+	queue_is_empty_1_positive covered
+	queue_is_empty_1_negative covered
+	queue_poll_negative uncovered
+	queue_poll_positive uncovered
+	queue_poll_all_positive covered
+	two_queues_positive uncovered
+	queue_contains_1_positive covered
+	queue_remove_if_positive covered
+sensitivity/collections/list: 37.50%
+	list_set_positive uncovered
+	list_set_negative covered
+	list_add_get_at_zero_index_empty_negative uncovered
+	list_add_and_remove_positive uncovered
+	list_to_array_and_get_positive uncovered
+	list_to_array_and_get_negative covered
+	list_union_positive uncovered
+	list_clear_start_negative covered
+sensitivity/collections/map: 62.50%
+	map_simple_get_1_positive uncovered
+	map_simple_get_1_negative covered
+	map_remove_1_negative covered
+	map_remove_1_positive covered
+	map_merge_1_positive uncovered
+	map_clear_negative covered
+	map_put_if_absent_negative uncovered
+	map_merge_2_negative covered
+sensitivity/duck/typing: 16.67%
+	duck_typing_quack_method_positive uncovered
+	duck_typing_quack_method_negative uncovered
+	duck_typing_hasattr_check_positive uncovered
+	duck_typing_hasattr_check_negative uncovered
+	duck_typing_multiple_attributes_positive uncovered
+	duck_typing_multiple_attributes_negative covered
+sensitivity/varargs/varargs: 100.00%
+	varargs_get_first_string_positive covered
+	varargs_get_first_string_negative covered
+	varargs_get_string_with_index_positive covered
+	varargs_get_string_with_index_negative covered
+	varargs_get_first_string_from_array_positive covered
+	varargs_get_first_string_from_array_negative covered
+	varargs_with_generics_positive covered
+	varargs_with_generics_negative covered
+	varargs_combine_strings_positive covered
+	varargs_combine_strings_negative covered
+sensitivity/unsafe/goPointers: 41.67%
+	string_pointer_simple_positive uncovered
+	string_pointer_simple_negative covered
+	double_string_pointer_positive uncovered
+	double_string_pointer_negative uncovered
+	swap_strings_positive covered
+	swap_strings_negative uncovered
+	remove_spaces_positive uncovered
+	arr_pointer_positive uncovered
+	arr_pointer_negative uncovered
+	pointer_init_positive covered
+	pointer_init_negative covered
+	pointer_init2_positive covered
+sensitivity/conditional/recursion: 0.00%
+	recursion_simple_positive uncovered
+	recursion_simple_negative uncovered
+	recursion_mutual_positive uncovered
+	recursion_mutual_negative uncovered
+sensitivity/conditional/if: 0.00%
+	if_operator_positive uncovered
+	if_operator_negative uncovered
+	if_else_operator_neutral uncovered
+	if_else_if_operator_neutral uncovered
+	if_operator_with_var_in_condition_positive uncovered
+	if_operator_with_var_in_condition_negative uncovered
+sensitivity/conditional/for: 5.00%
+	for_operator_positive uncovered
+	for_operator_negative uncovered
+	for_operator_reverse_positive uncovered
+	for_operator_reverse_negative uncovered
+	for_operator_string_array_positive uncovered
+	for_operator_string_array_negative uncovered
+	for_operator_continue_positive uncovered
+	for_operator_continue_negative uncovered
+	for_operator_break_positive uncovered
+	for_operator_break_negative uncovered
+	for_operator_nested_positive uncovered
+	for_operator_nested_negative uncovered
+	for_operator_change_index_positive uncovered
+	for_operator_change_index_negative uncovered
+	for_operator_non_zero_init_positive uncovered
+	for_operator_non_zero_init_negative uncovered
+	for_operator_strcpy_positive covered
+	for_operator_strcpy_negative uncovered
+	for_operator_collection_positive uncovered
+	for_operator_collection_negative uncovered
+sensitivity/conditional/conditionswitch: 100.00%
+	switch_basic_positive covered
+	switch_basic_negative covered
+	switch_multiple_conditions_positive covered
+	switch_multiple_conditions_negative covered
+	switch_fallthrough_positive covered
+	switch_fallthrough_negative covered
+	switch_multiple_case_conditions_positive covered
+	switch_multiple_case_conditions_negative covered
+sensitivity/conditional/while: 0.00%
+	while_operator_positive uncovered
+	while_operator_negative uncovered
+sensitivity/conditional/dowhile: 50.00%
+	do_while_operator_positive uncovered
+	do_while_operator_negative covered
+sensitivity/conditional/switch: 25.00%
+	switch_operator_positive uncovered
+	switch_operator_negative uncovered
+	switch_operator_any_positive uncovered
+	switch_operator_any_negative covered
+sensitivity/struct/anonstructures: 37.50%
+	simple_anonymous_structure_positive uncovered
+	simple_anonymous_structure_negative covered
+	anonymous_structure_with_nested_fields_positive covered
+	anonymous_structure_with_nested_fields_negative covered
+	anonymous_structure_in_slice_positive uncovered
+	anonymous_structure_in_slice_negative uncovered
+	anonymous_structure_as_return_value_positive uncovered
+	anonymous_structure_as_return_value_negative uncovered
+sensitivity/struct/struct: 0.00%
+	struct_get_positive uncovered
+	struct_get_negative uncovered
+sensitivity/concurrency/concurrency: 71.43%
+	thread_set_negative uncovered
+	thread_set_positive covered
+	thread_set_nostart_positive uncovered
+	two_set_threads_in_sequence_positive covered
+	two_set_threads_in_sequence_negative covered
+	two_switching_tasks_concurrent_positive covered
+	null_and_restore_condvar_positive covered
+sensitivity/concurrency/atomic: 0.00%
+	atomic_integer_negative uncovered
+	atomic_integer_restore_positive uncovered
+	atomic_integer_restore_negative uncovered
+sensitivity/concurrency/channels: 80.00%
+	channel_string_positive covered
+	channel_string_negative covered
+	channel_struct_positive covered
+	channel_struct_negative covered
+	channel_struct_data_int_positive covered
+	channel_struct_data_int_negative covered
+	channel_bool_positive covered
+	channel_bool_negative uncovered
+	channel_with_cycle_positive covered
+	channel_with_cycle_negative uncovered
+sensitivity/virtuality/class: 50.00%
+	derived_binary_op1_positive uncovered
+	derived_binary_op1_negative covered
+	derived_binary_op2_positive uncovered
+	derived_binary_op2_negative uncovered
+	base_binary_op_positive covered
+	base_binary_op_negative covered
+sensitivity/virtuality/multiInterface: 0.00%
+	multi_interface_positive_1 uncovered
+	multi_interface_positive_2 uncovered
+	multi_interface_negative_1 uncovered
+	multi_interface_negative_2 uncovered
+sensitivity/virtuality/default: 50.00%
+	binary_op_interface_default1_positive uncovered
+	binary_op_interface_default1_negative covered
+	binary_op_interface_default2_positive uncovered
+	binary_op_interface_default2_negative covered
+	binary_op_interface_default_positive uncovered
+	binary_op_interface_default_negative covered
+sensitivity/virtuality/interface: 50.00%
+	impl_binary_op_interface_class1_positive uncovered
+	impl_binary_op_interface_class1_negative covered
+	impl_binary_op_interface_class2_positive uncovered
+	impl_binary_op_interface_class2_negative covered
+	base_binary_op_interface_positive uncovered
+	base_binary_op_interface_negative covered
+sensitivity/goTypes/alias: 50.00%
+	type_alias_simple_positive uncovered
+	type_alias_simple_negative covered
+	type_alias_on_struct_positive uncovered
+	type_alias_on_struct_negative covered
+	type_alias_for_function_positive uncovered
+	type_alias_for_function_negative covered
+sensitivity/goTypes/assertions: 100.00%
+	type_assertion_simple_positive covered
+	type_assertion_simple_negative covered
+	type_assertion_with_struct_pointer_positive covered
+	type_assertion_with_struct_pointer_negative covered
+	type_assertion_in_switch_positive covered
+	type_assertion_in_switch_negative covered
+sensitivity/goTypes/embedding: 71.43%
+	embedding_simple_positive covered
+	embedding_simple_negative covered
+	embedding_method_not_override_positive uncovered
+	embedding_anonymous_fields_positive covered
+	embedding_anonymous_fields_negative covered
+	embedding_field_shadowing_positive uncovered
+	embedding_field_shadowing_negative covered
+sensitivity/reflection/reflection: 0.00%
+	simple_reflection_positive uncovered
+	simple_reflection_negative uncovered
+sensitivity/dynamic: 100.00%
+sensitivity/none: 100.00%
+sensitivity/nullable: 100.00%
+sensitivity/preprocessor: 100.00%
+sensitivity/slices: 100.00%
+sensitivity/disposable/disposable: 100.00%
+sensitivity/record/record: 100.00%
+sensitivity/pattern-matching/record_patterns: 100.00%
+sensitivity/pattern-matching/matching: 100.00%
+sensitivity/generics/constrainedMethods: 100.00%
+sensitivity/magic/magic: 100.00%
+sensitivity/monkey/patching: 100.00%
+sensitivity/field/sealedField: 100.00%
+sensitivity/field/propertyField: 100.00%
+sensitivity/field/primaryConstructors: 100.00%
+sensitivity/exceptions/rethrow: 100.00%
+sensitivity/exceptions/filters: 100.00%
+sensitivity/exceptions/causeThrows: 100.00%
+sensitivity/exceptions/tryCatchFinally: 100.00%
+sensitivity/collections/comprehension: 100.00%
+sensitivity/collections/linq: 100.00%
+sensitivity/collections/yield: 100.00%
+sensitivity/collections/streams: 100.00%
+sensitivity/collections/tuples: 100.00%
+sensitivity/vthreads/vthreads: 100.00%
+sensitivity/dependencyInjection/javaSpecificInjection: 100.00%
+sensitivity/dependencyInjection/cSharpSpecificInjection: 100.00%
+sensitivity/decorator/decorator: 100.00%
+sensitivity/unsafe/structSerialization: 100.00%
+sensitivity/unsafe/nativePointers: 100.00%
+sensitivity/unsafe/structPointers: 100.00%
+sensitivity/unsafe/csharpPointers: 100.00%
+sensitivity/events/events: 100.00%
+sensitivity/events/eventsCustom: 100.00%
+sensitivity/delegates/funcDelegates: 100.00%
+sensitivity/delegates/anonymousDelegates: 100.00%
+sensitivity/delegates/multicastDelegates: 100.00%
+sensitivity/delegates/customDelegates: 100.00%
+sensitivity/delegates/actionDelegates: 100.00%
+sensitivity/struct/refReadonlyField: 100.00%
+sensitivity/struct/deconstruction: 100.00%
+sensitivity/struct/mutation: 100.00%
+sensitivity/refargs/refargs: 100.00%
+sensitivity/import/import: 100.00%
+sensitivity/virtuality/explicitInterfaceImplementation: 100.00%
+sensitivity/cSharpAbstractions/partial: 100.00%
+sensitivity/cSharpAbstractions/abstract: 100.00%
+sensitivity/cSharpAbstractions/extensionMethods: 100.00%
+sensitivity/cSharpAbstractions/anonymous: 100.00%
+sensitivity/operators/operators: 100.00%
+sensitivity/operators/conversions: 100.00%
+sensitivity/operators/staticAbstract: 100.00%
