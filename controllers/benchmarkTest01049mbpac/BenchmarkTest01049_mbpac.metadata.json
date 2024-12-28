@@ -18,7 +18,8 @@
             " MACRO_Empty_string_Array -> []string{\"\", \"\", \"\"}",
             "MACRO_Zero_Or_One -> 1"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

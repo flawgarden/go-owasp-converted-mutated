@@ -18,7 +18,8 @@
             " MACRO_Any_string -> ~[EXPR_string]~",
             "EXPR_string -> strings.TrimSpace(~[EXPR_string]~)"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

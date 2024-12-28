@@ -26,7 +26,8 @@
             "MACRO_QueueName -> queue787231",
             "EXPR_string -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {

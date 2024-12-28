@@ -26,7 +26,8 @@
             "EXPR_string -> strings.ToLower(~[EXPR_string]~)",
             "MACRO_QueueName -> queue787231"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {
